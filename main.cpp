@@ -1,5 +1,4 @@
 #include <iostream>
-#include <ctime>
 
 using namespace std;
 
@@ -33,13 +32,13 @@ int main() {
 void drawBoard(char *spaces) {
     cout << '\n';
     cout << "     |    |     " << '\n';
-    cout << "   " << spaces[0] << " |  " << spaces[1] << " |     " << '\n';
+    cout << "   " << spaces[0] << " |  " << spaces[1] << " |  " << spaces[2] <<  '\n';
     cout << "_____|____|_____" << '\n';
     cout << "     |    |     " << '\n';
-    cout << "   " << spaces[2] << " |  " << spaces[3] << " |     " << '\n';
+    cout << "   " << spaces[3] << " |  " << spaces[4] << " |  " << spaces[5] << '\n';
     cout << "_____|____|_____" << '\n';
     cout << "     |    |     " << '\n';
-    cout << "   " << spaces[4] << " |  " << spaces[5] << " |     " << '\n';
+    cout << "   " << spaces[6] << " |  " << spaces[7] << " |  " << spaces[8] << '\n';
     cout << "     |    |     " << '\n';
     cout << '\n';
 }
@@ -65,10 +64,10 @@ void computerMove(char *spaces, char computer) {
 
 bool checkWinner(char *spaces, char player, char computer) {
 
-    return 0;
+    return false;
 }
 
 bool checkTie(char *space) {
 
-    return 0;
+    return false;
 }
